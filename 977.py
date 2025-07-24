@@ -38,5 +38,6 @@ class Solution:
     #         else:
     #             mylist.append(nums[left])
     #             left += 1
+    #
         mylist.reverse()
         return mylist
