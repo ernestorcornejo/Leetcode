@@ -1,13 +1,14 @@
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        left = 0
-        right = len(nums) - 1
-        mylist = []
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        low = 0
+        high = len(nums) - 1
 
-        for i in (right):
-            return i
+        while low <= high:
+            midval = (high + low) // 2
+            if nums[midval] == target:
+                return midval
+            elif nums[midval] < target:
+                low = midval + 1
+            else:
+                high = midval - 1
+        return -1

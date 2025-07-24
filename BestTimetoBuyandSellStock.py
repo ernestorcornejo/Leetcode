@@ -7,4 +7,5 @@ class Solution:
         right = len(prices) - 1
         mylist = []
 
-        
+        smallest_value = min(prices)
+        print(smallest_value)
